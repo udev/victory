@@ -96,6 +96,16 @@ class VersionTest {
     }
 
     @Test
+    void compareNull() {
+        String version = "1.0.1";
+        Version equal = new Version(version);
+
+        // pass an illegal argument
+        assertThrows(IllegalArgumentException.class,
+                () -> equal.compare(new Version(null)));
+    }
+
+    @Test
     void compare() {
         int result;
         String equalString = "1.2.3.4";

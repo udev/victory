@@ -36,7 +36,7 @@ public class Version {
      * Creates a new {@link Version} instance.
      *
      * @param versionString the version information to store for comparison in the future.
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public Version(@NotNull String versionString) {
         this.version = versionString;
@@ -47,7 +47,7 @@ public class Version {
      *
      * @param other the {@link Version} to compare with this Version instance.
      * @return true if the versions match else false.
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public boolean equals(@NotNull Version other) {
         return this.version.equals(other.version);
@@ -63,7 +63,7 @@ public class Version {
      * than the argument {@code Version}; and a value greater
      * than {@code 0} if this {@code Version} is numerically
      * greater than the argument {@code Version}.
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public int compare(@NotNull Version other) {
 
@@ -126,7 +126,7 @@ public class Version {
      * than the argument {@code Version}; and a value greater
      * than {@code 0} if the originator {@code Version} is numerically
      * greater than the argument {@code Version}.
-     * @since 0.1.0
+     * @since 1.0.0
      */
     private static int getTypeResult(String next1, String next2) {
         int result;

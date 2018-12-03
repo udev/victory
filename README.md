@@ -44,7 +44,7 @@ allprojects {
 Include Victory!
 ```groovy
 dependencies {
-    implementation 'com.github.udev:victory:0.1.0'
+    implementation 'com.github.udev:victory:1.0.0'
 }
 ```
 
